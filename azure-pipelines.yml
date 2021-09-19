@@ -15,6 +15,7 @@ stages:
     - job: FirstJob
       steps:
       - bash: echo Build FirstJob
+      - bash: echo $(PipeLineLevelVariable)
     - job: SecondJob
       steps:
       - bash: echo Build SecondJob

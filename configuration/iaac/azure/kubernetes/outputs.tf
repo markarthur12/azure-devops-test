@@ -27,6 +27,5 @@ output "host" {
 }
 
 output "private_key" {
- 
   sensitive = true
 }

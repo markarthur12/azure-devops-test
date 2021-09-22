@@ -16,11 +16,11 @@ output "cluster_username" {
 
 output "cluster_password" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config.0.password
-  sensitive = true
 }
 
 output "kube_config" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config_raw
+  sensitive = true
 }
 
 output "host" {
